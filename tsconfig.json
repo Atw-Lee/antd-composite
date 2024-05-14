@@ -7,20 +7,10 @@
     "jsx": "react",
     "baseUrl": "./",
     "paths": {
-      "@@/*": [
-        ".dumi/tmp/*"
-      ],
-      "antd-composite": [
-        "src"
-      ],
-      "antd-composite/*": [
-        "src/*",
-        "*"
-      ]
+      "@@/*": [".dumi/tmp/*"],
+      "antd-composite": ["src"],
+      "antd-composite/*": ["src/*", "*"]
     }
   },
-  "include": [
-    ".dumirc.ts",
-    "src/**/*"
-  ]
+  "include": [".dumirc.ts", "src/**/*"]
 }
