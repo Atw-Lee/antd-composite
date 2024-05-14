@@ -50,7 +50,7 @@ function Index() {
       value={value}
       style={{ width: 300 }}
       data={data.sort((a, b) => a.alphabet.localeCompare(b.alphabet))}
-      placeholder="请选择"
+      placeholder="Please select"
       onChange={setValue}
       mode="multiple"
     />

@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2024-05-14 12:03:26
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-14 15:01:09
+ * @LastEditTime: 2024-05-14 23:10:17
  * @Description:
  * @FilePath: /antd-composite/src/AlphabetSelect/demo/basic.tsx
  */
@@ -38,7 +38,7 @@ function Index() {
       value={value}
       style={{ width: 300 }}
       data={data}
-      placeholder="请选择"
+      placeholder="Please select"
       onChange={setValue}
     />
   );

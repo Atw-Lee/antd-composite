@@ -1,7 +1,7 @@
 {
   "name": "antd-composite",
   "version": "0.0.1",
-  "description": "A composite components  library with antd",
+  "description": "A composite components library with antd",
   "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -58,7 +58,7 @@
     "@types/react-dom": "^18.3.0",
     "@umijs/lint": "^4.2.2",
     "dumi": "^2.3.4",
-    "dumi-theme-antd": "^0.3.17",
+    "dumi-theme-antd": "^0.3.18",
     "eslint": "^8.46.0",
     "father": "^4.4.1",
     "husky": "^9.0.11",
