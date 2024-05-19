@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2024-05-13 09:28:06
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-14 23:13:01
+ * @LastEditTime: 2024-05-18 00:02:37
  * @Description:
  * @FilePath: /antd-composite/.dumirc.ts
  */
@@ -30,11 +30,11 @@ export default defineConfig({
     nav: {
       'zh-CN': [
         { title: '指南', link: '/guide' },
-        { title: '组件', link: '/components/alphabet-select' },
+        { title: '组件', link: '/components/input-unit' },
       ],
       'en-US': [
         { title: 'Guide', link: '/guide-en' },
-        { title: 'Components', link: '/components/alphabet-select-en' },
+        { title: 'Components', link: '/components/input-unit-en' },
       ],
     },
     actions: {
@@ -46,7 +46,7 @@ export default defineConfig({
         },
         {
           text: '组件',
-          link: '/components/alphabet-select',
+          link: '/components/input-unit',
         },
       ],
       'en-US': [
@@ -57,7 +57,7 @@ export default defineConfig({
         },
         {
           text: 'Components',
-          link: '/components/alphabet-select-en',
+          link: '/components/input-unit-en',
         },
       ],
     },
