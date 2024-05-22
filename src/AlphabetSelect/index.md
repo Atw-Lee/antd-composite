@@ -3,6 +3,7 @@ nav:
   title: 组件
 group:
   title: Select
+  order: 1
 demo:
   cols: 2
 ---

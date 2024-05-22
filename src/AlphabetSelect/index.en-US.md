@@ -3,6 +3,7 @@ nav:
   title: Components
 group:
   title: Select
+  order: 1
 demo:
   cols: 2
 ---
