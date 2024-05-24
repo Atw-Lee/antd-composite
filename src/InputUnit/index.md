@@ -22,7 +22,7 @@ group:
 
 > `extends Omit<`[InputProps](https://ant-design.antgroup.com/components/select-cn#select-props)`, 'value' | 'onChange' | 'addonAfter'>`
 
-| 属性      | 说明                             | 类型                                                                                                                           | 默认值 |
+| 参数      | 说明                             | 类型                                                                                                                           | 默认值 |
 | --------- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ | ------ |
 | options   | 单位下拉选择器数据化配置选项内容 | `{ label, value }[]`                                                                                                           | -      |
 | unitProps | 单位下拉选择器Props              | `Omit<`[SelectProps](https://ant-design.antgroup.com/components/select-cn#select-props)`, 'value' \| 'onChange' \| 'options'>` | -      |
@@ -31,7 +31,7 @@ group:
 
 ### Value
 
-| 属性  | 说明                | 类型   |
-| ----- | ------------------- | ------ |
-| input | 输入框value         | string |
-| unit  | 单位下拉选择器value | string |
+| 参数  | 说明                | 类型     |
+| ----- | ------------------- | -------- |
+| input | 输入框value         | `string` |
+| unit  | 单位下拉选择器value | `string` |

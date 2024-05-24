@@ -22,16 +22,16 @@ Input data with units, such as degrees/hours/seconds. m/km/h
 
 > `extends Omit<`[InputProps](https://ant-design.antgroup.com/components/select#select-props)`, 'value' | 'onChange' | 'addonAfter'>`
 
-| 属性      | 说明                                                | 类型                                                                                                                        | 默认值 |
-| --------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------ |
-| options   | Unit selector dataflow configuration option content | `{ label, value }[]`                                                                                                        | -      |
-| unitProps | Unit pull-down selector Props                       | `Omit<`[SelectProps](https://ant-design.antgroup.com/components/select#select-props)`, 'value' \| 'onChange' \| 'options'>` | -      |
-| value     | Selected data                                       | [Value](#value)                                                                                                             | -      |
-| onChange  | This function is called when value changes          | (value:[Value](#value))=>void                                                                                               | -      |
+| Property  | Description                                         | Type                                                                                                                        | Default |
+| --------- | --------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------- |
+| options   | Unit selector dataflow configuration option content | `{ label, value }[]`                                                                                                        | -       |
+| unitProps | Unit pull-down selector Props                       | `Omit<`[SelectProps](https://ant-design.antgroup.com/components/select#select-props)`, 'value' \| 'onChange' \| 'options'>` | -       |
+| value     | Selected data                                       | [Value](#value)                                                                                                             | -       |
+| onChange  | This function is called when value changes          | (value:[Value](#value))=>void                                                                                               | -       |
 
 ### Value
 
-| 属性  | 说明           | 类型   |
-| ----- | -------------- | ------ |
-| input | Input value    | string |
-| unit  | Selector value | string |
+| Property | Description    | Type     |
+| -------- | -------------- | -------- |
+| input    | Input value    | `string` |
+| unit     | Selector value | `string` |

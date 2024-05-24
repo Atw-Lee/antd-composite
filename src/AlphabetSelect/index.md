@@ -25,19 +25,19 @@ demo:
 
 > `extends Omit<`[SelectProps](https://ant-design.antgroup.com/components/select-cn#select-props)`, 'value' | 'onChange' | 'dropdownRender' | 'options' | 'fieldNames' | 'filterOption' |'filterSort' | 'optionFilterProp' | 'optionRender'>`
 
-| 属性       | 说明                         | 类型                                                               | 默认值                |
+| 参数       | 说明                         | 类型                                                               | 默认值                |
 | ---------- | ---------------------------- | ------------------------------------------------------------------ | --------------------- |
 | data       | 数据源                       | [Value](#value)[]                                                  | -                     |
 | value      | 选择的数据，单选多选都是数组 | [Value](#value)[]                                                  | -                     |
-| fieldNames | 自定义节点 id、name 的字段   | object                                                             | {id:`id`,name:`name`} |
+| fieldNames | 自定义节点 id、name 的字段   | `object`                                                           | {id:`id`,name:`name`} |
 | rowProps   | 数据中行属性                 | [RowProps](https://ant-design.antgroup.com/components/grid-cn#row) | {gutter:`[8, 8]`}     |
 | colProps   | 数据中列属性                 | [ColProps](https://ant-design.antgroup.com/components/grid-cn#col) | {span:`6`}            |
 | onChange   | value 变化时，调用此函数     | (value:[Value](#value)[])=>void                                    | {span:`6`}            |
 
 ### Value
 
-| 属性     | 说明       | 类型                 |
+| 参数     | 说明       | 类型                 |
 | -------- | ---------- | -------------------- |
-| id       | id         | string               |
-| name     | name       | string               |
+| id       | id         | `string`             |
+| name     | name       | `string`             |
 | alphabet | 首字母标识 | `A` \| `B`... \| `Z` |
