@@ -2,11 +2,12 @@
  * @Author: atwlee
  * @Date: 2024-05-12 20:55:09
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-14 15:00:40
+ * @LastEditTime: 2024-05-24 23:16:07
  * @Description:
  * @FilePath: /antd-composite/src/AlphabetSelect/index.tsx
  */
 import { Divider, Select } from 'antd';
+import { DefaultOptionType } from 'antd/es/select';
 import classNames from 'classnames';
 import React, {
   useCallback,
@@ -101,15 +102,15 @@ function Index(props: AlphabetSelectProps) {
       }}
       value={value.map((i) => i[fieldNames.id])}
       open={deferredOpen}
-      options={data}
+      options={data as unknown as DefaultOptionType[]}
       popupClassName={classNames([
         'ant-alphabet-select-popup',
         restProps.popupClassName,
       ])}
       dropdownRender={dropdownRender}
       onChange={(_, option) => {
-        setValue((option ?? []) as Value[]);
-        onChange?.((option ?? []) as Value[]);
+        setValue((option ?? []) as unknown as Value[]);
+        onChange?.((option ?? []) as unknown as Value[]);
       }}
       onDropdownVisibleChange={(open) => {
         setOpen(open);

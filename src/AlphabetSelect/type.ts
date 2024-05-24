@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2024-05-13 10:09:20
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-14 13:59:45
+ * @LastEditTime: 2024-05-24 23:16:32
  * @Description:
  * @FilePath: /antd-composite/src/AlphabetSelect/type.ts
  */
