@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2024-05-13 09:28:06
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-18 00:02:37
+ * @LastEditTime: 2024-05-25 08:31:08
  * @Description:
  * @FilePath: /antd-composite/.dumirc.ts
  */
@@ -10,6 +10,8 @@ import { defineConfig } from 'dumi';
 import { defineThemeConfig } from 'dumi-theme-antd/dist/defineThemeConfig';
 
 export default defineConfig({
+  base: '/antd-composite/',
+  publicPath: '/antd-composite/',
   outputPath: 'docs-dist',
   locales: [
     { id: 'zh-CN', name: '中文', suffix: '' },
