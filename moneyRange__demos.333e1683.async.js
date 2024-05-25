@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkantd_composite=self.webpackChunkantd_composite||[]).push([[3545],{67388:function(u,e,n){n.r(e);var t=n(14615),c=n(75271),o=n(52676);function a(){return(0,o.jsx)(t.MoneyRange,{placeholder:"Please enter the amount range",onChange:function(s){return console.log(s)},styles:{width:"60%"}})}e.default=a}}]);
