@@ -5,13 +5,13 @@ group:
   title: Input
 ---
 
-# MoneyRange
+# InputRange
 
-Enter the input box for the amount range.
+Input field for the input range.
 
 ## When To Use
 
-When you need to enter a range of amounts, or other scenarios where starting values are required.
+Scenarios where starting values need to be entered, such as range of amounts, maximum and minimum values.
 
 ## Examples
 

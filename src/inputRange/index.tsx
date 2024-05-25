@@ -2,18 +2,18 @@
  * @Author: atwlee
  * @Date: 2023-10-13 16:15:56
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-24 22:44:30
+ * @LastEditTime: 2024-05-25 23:40:44
  * @Description:
- * @FilePath: /antd-composite/src/moneyRange/index.tsx
+ * @FilePath: /antd-composite/src/inputRange/index.tsx
  */
 import { Input, InputNumber, Space } from 'antd';
 import React, { useEffect } from 'react';
-import type { MoneyInputRangeProps } from './type';
+import type { InputRangeProps } from './type';
 
-function MoneyInputRange(props: MoneyInputRangeProps) {
+function InputRange(props: InputRangeProps) {
   const { placeholder, classNames, onChange, styles } = props;
 
-  const [value, setValue] = React.useState<MoneyInputRangeProps['value']>();
+  const [value, setValue] = React.useState<InputRangeProps['value']>();
 
   useEffect(() => {
     setValue(props.value);
@@ -50,4 +50,4 @@ function MoneyInputRange(props: MoneyInputRangeProps) {
   );
 }
 
-export default MoneyInputRange;
+export default InputRange;

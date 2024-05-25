@@ -2,11 +2,11 @@
  * @Author: atwlee
  * @Date: 2024-05-24 07:18:12
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-24 22:44:18
+ * @LastEditTime: 2024-05-25 23:41:03
  * @Description:
- * @FilePath: /antd-composite/src/moneyRange/type.ts
+ * @FilePath: /antd-composite/src/inputRange/type.ts
  */
-export interface MoneyInputRangeProps {
+export interface InputRangeProps {
   classNames?: string;
   placeholder?: string;
   styles?: React.CSSProperties;
