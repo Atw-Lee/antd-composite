@@ -1,29 +1,27 @@
 {
   "name": "antd-composite",
   "version": "0.0.1",
-  "description": "A composite components  library with antd",
+  "description": "A composite components library with antd",
+  "license": "MIT",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "start": "npm run dev",
-    "dev": "dumi dev",
     "build": "father build",
     "build:watch": "father dev",
+    "deploy": "gh-pages -d docs-dist",
+    "dev": "dumi dev",
     "docs:build": "dumi build",
-    "prepare": "husky install && dumi setup",
     "doctor": "father doctor",
     "lint": "npm run lint:es && npm run lint:css",
     "lint:css": "stylelint \"{src,test}/**/*.{css,less}\"",
     "lint:es": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
-    "prepublishOnly": "father doctor && npm run build"
+    "prepare": "husky install && dumi setup",
+    "prepublishOnly": "father doctor && npm run build",
+    "start": "npm run dev"
   },
-  "authors": [
-    "atwlee0204@gmail.com"
-  ],
-  "license": "MIT",
-  "files": [
-    "dist"
-  ],
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
@@ -46,30 +44,50 @@
       "prettier --parser=typescript --write"
     ]
   },
-  "publishConfig": {
-    "access": "public"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
+  "dependencies": {
+    "@ant-design/icons": "^5.3.7",
+    "@babel/runtime": "^7.24.6",
+    "@dnd-kit/core": "^6.1.0",
+    "@dnd-kit/modifiers": "^7.0.0",
+    "@dnd-kit/sortable": "^8.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "classnames": "^2.5.1",
+    "radash": "^12.1.0",
+    "re-resizable": "^6.9.16"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@types/mockjs": "^1.0.10",
+    "@types/pinyin": "^2.10.2",
     "@types/react": "^18.3.2",
     "@types/react-dom": "^18.3.0",
     "@umijs/lint": "^4.2.2",
     "dumi": "^2.3.4",
-    "dumi-theme-antd": "^0.3.17",
-    "eslint": "^9.2.0",
+    "dumi-theme-antd": "^0.3.18",
+    "eslint": "^8.46.0",
     "father": "^4.4.1",
+    "gh-pages": "^6.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
+    "mockjs": "^1.1.0",
+    "pinyin": "^2.11.0",
     "prettier": "^3.2.5",
     "prettier-plugin-organize-imports": "^3.2.4",
     "prettier-plugin-packagejson": "^2.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "stylelint": "^16.5.0"
-  }
+    "stylelint": "^14.0.0"
+  },
+  "peerDependencies": {
+    "antd": "^5.17.0",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "authors": [
+    "atwlee0204@gmail.com"
+  ]
 }
