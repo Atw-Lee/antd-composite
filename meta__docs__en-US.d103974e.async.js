@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkantd_composite=self.webpackChunkantd_composite||[]).push([[7430],{61373:function(s,t,n){n.r(t),n.d(t,{demos:function(){return d}});var u=n(75271),d={}},56448:function(s,t,n){n.r(t),n.d(t,{texts:function(){return u}});const u=[{value:"This is a guide example.",paraId:0}]}}]);
