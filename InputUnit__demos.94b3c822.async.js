@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkantd_composite=self.webpackChunkantd_composite||[]).push([[78],{67228:function(s,e,n){n.r(e);var t=n(69106),u=n(75271),o=n(52676);function a(){return(0,o.jsx)(t.InputUnit,{options:[{label:"M/S",value:"M/S"},{label:"KM/H",value:"KM/H"}],placeholder:"Please enter refresh time",onChange:function(l){console.log(l)}})}e.default=a}}]);
