@@ -11,7 +11,6 @@
   "scripts": {
     "build": "father build",
     "build:watch": "father dev",
-    "deploy": "gh-pages -d docs-dist",
     "dev": "dumi dev",
     "docs:build": "dumi build",
     "doctor": "father doctor",
@@ -67,7 +66,6 @@
     "dumi-theme-antd": "^0.4.1",
     "eslint": "^8.46.0",
     "father": "^4.4.1",
-    "gh-pages": "^6.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",
     "mockjs": "^1.1.0",
