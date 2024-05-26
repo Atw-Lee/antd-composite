@@ -12,7 +12,7 @@ There is an input field for unit selection.
 
 ## When To Use
 
-Input data with units, such as degrees/hours/seconds. m/km/h
+Input data with units, such as degrees/hours/seconds、m/km/h.
 
 ## Examples
 

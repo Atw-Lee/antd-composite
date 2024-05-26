@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2023-09-25 09:23:25
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-22 23:31:37
+ * @LastEditTime: 2024-05-26 22:17:33
  * @Description:
  * @FilePath: /antd-composite/src/SortableTransfer/index.tsx
  */
@@ -14,6 +14,7 @@ import React, {
   ForwardedRef,
   forwardRef,
   useCallback,
+  useEffect,
   useImperativeHandle,
   useMemo,
   useRef,
@@ -42,9 +43,9 @@ function Index<T extends { [key: string]: any }>(
   ref: ForwardedRef<TransferRef>,
 ) {
   const {
-    width = 688,
-    height = 374,
-    transferWidth = 336,
+    width = 700,
+    height = 375,
+    transferWidth = 340,
     allowResizable = false,
     dataSource,
     fieldNames = {
@@ -56,6 +57,7 @@ function Index<T extends { [key: string]: any }>(
     targetHeaderLeft,
     targetHeaderRight,
     onChange,
+    value,
   } = props;
 
   const keyCode = fieldNames.id;
@@ -68,6 +70,10 @@ function Index<T extends { [key: string]: any }>(
   const [selectedKeys, setSelectedKeys] = useState<(string | number)[]>([]);
   const [searchLeftData, setSearchLeftData] = useState<T[]>();
   const [searchRightData, setSearchRightData] = useState<T[]>();
+
+  useEffect(() => {
+    setSelectedKeys(value?.map((i) => i[keyCode]) ?? []);
+  }, [value]);
 
   // 用map对象存一下dataSource
   const dataSourceMapMemo = useMemo(() => {

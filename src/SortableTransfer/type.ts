@@ -2,7 +2,7 @@
  * @Author: atwlee
  * @Date: 2023-09-25 09:27:44
  * @LastEditors: atwlee
- * @LastEditTime: 2024-05-22 22:34:31
+ * @LastEditTime: 2024-05-26 21:59:20
  * @Description:
  * @FilePath: /antd-composite/src/SortableTransfer/type.ts
  */
@@ -25,6 +25,7 @@ export interface TransferProps<T> {
   targetHeaderRight?: React.ReactNode;
   allowResizable?: boolean;
   onChange?: (data: T[]) => void;
+  value?: T[];
 }
 
 export interface TransferRef {
